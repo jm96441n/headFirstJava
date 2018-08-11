@@ -1,6 +1,6 @@
-class // replace with code {
-  int // replace with code = 0;
-  void // replace with code {
+class Echo {
+  int count = 0;
+  void hello() {
     System.out.println("helloooo...");
   }
 }
