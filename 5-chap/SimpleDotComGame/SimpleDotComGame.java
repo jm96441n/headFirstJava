@@ -7,9 +7,9 @@ public class SimpleDotComGame {
   public static void main(String[] args) {
     GameHelper helper = new GameHelper();
     SimpleDotCom dotCom = new SimpleDotCom();
-    int firstCell = (int) (Math.random() * 5);
+    int firstCell = (int) (Math.random() * 4);
     int numberOfGuesses = 0;
-    int[] locations = {firstCell, firstCell + 1, firstCell + 2};
+    int[] locations = {firstCell +1 , firstCell + 2, firstCell + 3};
 
     dotCom.setLocationCells(locations);
 
