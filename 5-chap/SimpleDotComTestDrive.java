@@ -1,15 +1,28 @@
 class SimpleDotComTestDrive {
   public static void main(String[] args) {
     SimpleDotCom dotCom = new SimpleDotCom();
-    dotCom.locationCells = {2,3,4};
+    int[] locations = {2,3,4};
+    dotCom.locationCells = locations;
 
     String correctGuess = "3";
     String wrongGuess = "1";
 
-    System.out.print("This should be a hit: ");
-    dotCom.checkYourself(correctGuess);
+    String correctResponse = dotCom.checkYourself(correctGuess);
+    String testResult = "failed";
 
-    System.out.print("This should be a miss: ");
-    dotCom.checkYourself(wrongGuess);
+    if(correctResponse.equals("hit")) {
+      testResult = "passed";
+    }
+
+    System.out.println(testResult);
+    testResult = "failed";
+
+    String wrongResponse = dotCom.checkYourself(wrongGuess);
+
+    if (wrongResponse.equals("miss")) {
+      testResult = "passed";
+    }
+
+    System.out.println(testResult);
   }
 }

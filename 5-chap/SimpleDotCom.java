@@ -8,3 +8,7 @@ String checkYourself(String guess){}
 
 void setLocationCells(int[] loc) {}
 */
+
+public class SimpleDotCom {
+
+}
