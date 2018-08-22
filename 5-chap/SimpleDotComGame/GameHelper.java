@@ -2,12 +2,12 @@
 methods:
 getUserInput
 */
-import java.io;
+import java.io.*;
 
 public class GameHelper {
   public String getUserInput(String prompt) {
-    String input;
-    System.out.print(output + " ");
+    String input = null;
+    System.out.print(prompt + " ");
     try {
       BufferedReader is = new BufferedReader(new InputStreamReader(System.in));
       input = is.readLine();
