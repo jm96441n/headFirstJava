@@ -69,4 +69,30 @@ if (!brand.equals("x")) {
 
 - Typically `&` and `|` are used for bit manipulation
 
+## Using the Library (the Java API)
 
+- In the Java API classes are grouped into packages
+
+- Every class in the Java library belongs to a package
+
+- The package has a name, like *javax.swing*
+
+  - package that holds some of the swing GUI classes
+
+- ArrayList is in the package called *java.util*
+
+- They must be imported at top of file somewhere in your program
+
+- ArrayList is not full name of package
+
+  - full name: `java.util.ArrayList`
+
+    - `java.util` is the package name
+  
+    - `ArrayList` is the class name
+  
+### Where did the `x` come from in *javax.swing*
+
+*Or what does it mean if a package starts with javax?*
+
+- Standard extensions, by convention, all began with an `x` appended to the regular *_java_* starter package
